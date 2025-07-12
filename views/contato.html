@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - DevBurger</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/image/logo.png" alt="Logo da DevBurger" style="width: 150px; height: auto;">
+            <h1>Fale Conosco</h1>
+            <nav>
+                <a href="/">Voltar para a Página Inicial</a>
+            </nav>
+        </header>
+
+        <main>
+            <p>Tem alguma dúvida, sugestão ou crítica? Preencha o formulário abaixo!</p>
+            
+            <form action="/contato" method="POST">
+                <div>
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">Seu Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 DevBurger</p>
+        </footer>
+    </div>
+</body>
+</html>
